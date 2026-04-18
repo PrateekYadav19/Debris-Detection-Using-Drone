@@ -25,7 +25,6 @@ if source == "Upload Image":
         class_name = results[0].names[top1_class_id]
         class_prob = results[0].probs.top1conf.item() * 100
         st.write(f"Prediction: **{class_name}** ({class_prob:.2f}% confidence)")
-
 if source == "Use Camera":
     picture = st.camera_input("Take a picture")
     if picture is not None:
