@@ -4,7 +4,6 @@ from PIL import Image
 import numpy as np
 
 st.title("YOLOv8 Image Classification (ImageNet)")
-
 @st.cache_resource
 def load_model():
     return YOLO("yolov8n.pt")  # YOLOv8 nano classification pretrained on ImageNet
