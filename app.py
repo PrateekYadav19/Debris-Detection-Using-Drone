@@ -7,7 +7,6 @@ st.title("YOLOv8 Image Classification (ImageNet)")
 @st.cache_resource
 def load_model():
     return YOLO("yolov8n.pt")  # YOLOv8 nano classification pretrained on ImageNet
-
 model = load_model()
 
 source = st.radio("Choose input source:", ["Upload Image", "Use Camera"])
