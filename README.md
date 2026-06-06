@@ -7,7 +7,6 @@ The system uses drones to capture aerial images and videos of water bodies and s
 
 **Key Features:**
 
-
 * Fully offline deployment with no internet dependency.
 * Drone-based aerial monitoring for hard-to-reach areas.
 * AI-powered debris detection and classification using computer vision.
