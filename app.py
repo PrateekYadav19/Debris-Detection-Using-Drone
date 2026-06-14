@@ -9,7 +9,6 @@ def load_model():
 model = load_model()
 
 source = st.radio("Choose input source:", ["Upload Image", "Use Camera"])
-
 if source == "Upload Image":
     uploaded_file = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
     if uploaded_file is not None:
