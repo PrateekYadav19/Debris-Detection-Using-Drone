@@ -16,7 +16,6 @@ if source == "Upload Image":
         st.image(image, caption="Uploaded Image", use_column_width=True)
         img_array = np.array(image)
         results = model(img_array)
-
         top1_class_id = results[0].probs.top1
         class_name = results[0].names[top1_class_id]
         class_prob = results[0].probs.top1conf.item() * 100
